@@ -1,6 +1,6 @@
 //Pines del Joystick
-#define pinJoystickX A1
-#define pinJoystickY A0
+#define pinJoystickX A0
+#define pinJoystickY A1
 
 #define pinJoystickPulsador 2
 

@@ -1,3 +1,8 @@
+//Velocidades predeterminadas
+#define MaxSpeed        255
+#define NoSpeed         0
+#define MidSpeed        120
+#define SlowSpeed       70
 
 //Constantes de los mensajes
 /*
@@ -20,3 +25,17 @@
 #define pinLedDerecha     5
 
 #define pinLedEstadoBoton 13
+
+//Pines del coche
+// Motor A
+#define JumperA               6
+#define EntradaUnoUno         52
+#define EntradaUnoDos         53
+
+// Motor B        
+#define JumperB               7
+#define EntradaDosUno         24
+#define EntradaDosDos         25
+
+
+

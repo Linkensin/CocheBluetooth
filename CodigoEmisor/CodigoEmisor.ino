@@ -47,8 +47,8 @@ void loop() {
   //FuncMostrarDatosMonitorSerial(ValorX, ValorY, ValorBoton);   //Para mostrar los datos por el monitor Serial
 
   Direccion = FuncCalcularDireccion(ValorX, ValorY);
-  /* //Para printear directamente la informacion al monitor serial
-  Serial.print(!ValorBoton);
+  //Para printear directamente la informacion al monitor serial
+  /* Serial.print(!ValorBoton);
   Serial.print(" | ");
   Serial.println(Direccion);
   */
