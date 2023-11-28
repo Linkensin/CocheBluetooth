@@ -1,0 +1,25 @@
+#include <Servo.h>
+Servo puerta; //servo-->puerta
+
+int pulsador=8;
+
+void setup()
+{
+  
+  puerta.attach(7);//configurem la porta al pin 7, sempre que utilitzem una llibreria posem attach
+  pinMode(pulsador, INPUT);
+}
+
+void loop()
+{
+  if(digitalRead(pulsador) == LOW)
+  {
+    puerta.write(180); //s'obre la porta
+    delay(1000);
+  }
+  else
+  {
+  	puerta.write(0); //s'obre la porta
+    delay(1000);
+  }
+}
