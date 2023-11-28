@@ -10,12 +10,6 @@ int ValorBoton;
 
 SoftwareSerial BluetoothReceptor = SoftwareSerial(pinRx, pinTx);
 
-void FuncEjecutarOrden(char OrdenAEjecutar, int EstadoBoton){
-  Serial.print(OrdenAEjecutar);
-  Serial.print(" | ");
-  Serial.println(EstadoBoton);
-}
-
 void setup() {
   Serial.begin(9600); //Inicio monitor serial
   pinMode(pinRx, INPUT);
@@ -23,7 +17,7 @@ void setup() {
 
   BluetoothReceptor.begin(9600);
 
-  FuncActivarPinesDebug();
+  //FuncActivarPinesLedsDeDebug();
 }
 
 void loop() {
@@ -31,6 +25,9 @@ void loop() {
     DatosRecibidos = BluetoothReceptor.readStringUntil('\n');
     sscanf(DatosRecibidos.c_str(), "%c,%d", &Orden, &ValorBoton);
 
-    FuncEncenderLedsDebug(Orden, ValorBoton);
+    //FuncEncenderLedsDebug(Orden, ValorBoton);
+    //FuncMostrarDatosRecibidos(Orden, ValorBoton);
+    ;
+
   }
 }

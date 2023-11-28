@@ -18,7 +18,7 @@ char FuncCalcularDireccion(int EntradaX, int EntradaY){
     return 'R';
   }else if(EntradaY < EstandarDeEntrada-DiferenciaMinima){ // Y mas pequeño que 300 = Atras
     return 'B';
-  }else if(EntradaY >EstandarDeEntrada+DiferenciaMinima){ // Y mas grande que 700 = Adelante
+  }else if(EntradaY > EstandarDeEntrada+DiferenciaMinima){ // Y mas grande que 700 = Adelante
     return 'F';
   }else{ //Si no hay movimiento entonces devuelve N = Nada
     return 'N';

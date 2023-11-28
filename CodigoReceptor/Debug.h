@@ -1,7 +1,7 @@
 
 #include "Constantes.h"
 
-void FuncActivarPinesDebug(){
+void FuncActivarPinesLedsDeDebug(){
   pinMode(pinLedDelante, OUTPUT);
   pinMode(pinLedAtras, OUTPUT);
   pinMode(pinLedIzquierda, OUTPUT);
@@ -46,4 +46,10 @@ void FuncEncenderLedsDebug(char Orden, int EstadoBoton){
   }else{
     digitalWrite(pinLedEstadoBoton, LOW);
   }
+}
+
+void FuncMostrarDatosRecibidos(char OrdenAEjecutar, int EstadoBoton){
+  Serial.print(OrdenAEjecutar);
+  Serial.print(" | ");
+  Serial.println(EstadoBoton);
 }
